@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "blender": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool", "run", "--from",
+        "git+https://projects.blender.org/lab/blender_mcp.git@2cea8d566dde07fbac28a61d698909d69724e853#subdirectory=mcp",
+        "blender-mcp", "--transport", "stdio"
+      ],
+      "env": {"BLENDER_MCP_HOST": "127.0.0.1", "BLENDER_MCP_PORT": "9876"}
+    }
+  }
+}

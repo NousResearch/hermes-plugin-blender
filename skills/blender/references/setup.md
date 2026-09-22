@@ -24,5 +24,6 @@ Never install an unrelated PyPI project named blender-mcp: this package delibera
 - `uv` or Git missing: prerequisite missing; do not silently install executables.
 - Tool listing works but scene query fails: MCP process is up, but the Blender bridge is unavailable.
 - Blender missing or too old: install/update is a separate user-approved action.
+- `*_for_cli` tool reports `Blender executable not found at 'blender'`: these tools start `blender --background` from `BLENDER_PATH`, else `PATH`, and Hermes does not pass on a `BLENDER_PATH` set in a shell or `.env`. Put a `blender` command on the backend's `PATH`, for example in the directory that holds `uv`. On macOS, use a wrapper script that runs `/Applications/Blender.app/Contents/MacOS/Blender "$@"`. On Windows, add the folder containing `blender.exe` to `PATH` and restart Hermes.
 - Port already used: identify the owner; do not kill it or attach to an arbitrary process.
 - Remote Hermes backend: localhost means the backend's machine, not the Desktop client's machine. Both Blender and MCP must run on the intended host.

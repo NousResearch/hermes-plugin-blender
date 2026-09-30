@@ -39,7 +39,8 @@
                 {
                   "kind": "app_bundle",
                   "name": "Blender.app"
-                }
+                },
+                "~/Library/Application Support/Steam/steamapps/common/Blender/Blender.app"
               ],
               "version": {
                 "kind": "plist"
@@ -59,7 +60,10 @@
                 {
                   "kind": "snap",
                   "name": "blender"
-                }
+                },
+                "~/.steam/steam/steamapps/common/Blender/blender",
+                "~/.local/share/Steam/steamapps/common/Blender/blender",
+                "~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Blender/blender"
               ]
             }
           },

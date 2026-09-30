@@ -31,5 +31,6 @@ Separately on macOS: Hermes portable package loading discovered the companion sk
 - MCP serverInfo reported `1.30.0`; the server source is identified by the immutable Git revision above, not that advertised string.
 - `plugin.json` declares Blender's presence and version (5.1+, Windows and macOS). No liveness gate is declared: connection failure reports an unavailable bridge; it does not prove why Blender is unavailable.
 - Presence was checked on macOS with Blender 5.2.1 in `/Applications`. The Windows and Linux locations are not yet checked on a real machine.
+- Known detection gaps (the install is refused although Blender is there): a custom folder picked in the Windows MSI (the MSI records no install folder in its uninstall entry), the Microsoft Store package, a Steam library outside the default one, and a Linux tarball that is not on `PATH`.
 
 Machine-specific raw logs and remote harnesses are retained privately and excluded from this repository.

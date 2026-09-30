@@ -13,7 +13,7 @@ Choose the destination profile with the global `hermes -p <profile>` option. Cat
 
 ## Prerequisites
 
-- Blender 5.1 or newer on the same machine as the Hermes backend. Hermes checks for it before installing and refuses the install when it is missing: on Windows the `Blender` uninstall entry's install folder or `%ProgramFiles%/Blender Foundation/Blender */blender.exe`; on macOS `Blender.app` in `/Applications` or `~/Applications`; on Linux `blender` on `PATH`, the `org.blender.Blender` flatpak or the `blender` snap. Linux has no version source, so the 5.1 minimum is checked on Windows and macOS only. This needs a Hermes release that reads location lists in `app:` declarations.
+- Blender 5.1 or newer on the same machine as the Hermes backend. Hermes checks for it before installing and refuses the install when it is missing: on Windows the `Blender` uninstall entry's install folder or `%ProgramFiles%/Blender Foundation/Blender */blender.exe`; on macOS `Blender.app` in `/Applications`, `~/Applications` or the Steam library; on Linux `blender` on `PATH`, the `org.blender.Blender` flatpak, the `blender` snap or the Steam library (native or flatpak Steam). Linux has no version source, so the 5.1 minimum is checked on Windows and macOS only. This needs a Hermes release that reads location lists in `app:` declarations.
 - The official Blender Lab MCP add-on installed and enabled in Blender, with Online access enabled and its bridge started on loopback port 9876.
 - Git and uv available to the backend. Network access is required for the initial MCP environment setup.
 

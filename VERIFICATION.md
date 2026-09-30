@@ -29,6 +29,7 @@ Separately on macOS: Hermes portable package loading discovered the companion sk
 - Full Windows Hermes install/activation and profile isolation were not established by the protocol smoke alone.
 - The first uv download/build took several minutes. README preparation avoids relying on a short MCP discovery deadline.
 - MCP serverInfo reported `1.30.0`; the server source is identified by the immutable Git revision above, not that advertised string.
-- No automatic Blender presence/version/liveness gate is declared. Connection failure reports an unavailable bridge; it does not prove why Blender is unavailable.
+- `plugin.json` declares Blender's presence and version (5.1+, Windows and macOS). No liveness gate is declared: connection failure reports an unavailable bridge; it does not prove why Blender is unavailable.
+- Presence was checked on macOS with Blender 5.2.1 in `/Applications`. The Windows and Linux locations are not yet checked on a real machine.
 
 Machine-specific raw logs and remote harnesses are retained privately and excluded from this repository.

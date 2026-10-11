@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **This repo has moved.** The plugin now lives in [`NousResearch/hermes-official-plugins/blender`](https://github.com/NousResearch/hermes-official-plugins/tree/main/blender), the single repo for Nous's official Hermes plugins. Its history, open issues and pull requests went with it, and this repo is archived.
+>
+> Already installed? `hermes plugins update` moves you to the new home automatically. New install: `hermes plugins install` from the plugin catalog.
+
 # Blender integration for Hermes
 
 A portable Hermes plugin containing MCP launch configuration and a workflow skill for the [official Blender Lab MCP server](https://www.blender.org/lab/mcp-server/).
